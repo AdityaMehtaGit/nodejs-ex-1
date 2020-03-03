@@ -10,6 +10,10 @@ pool:
   vmImage: 'ubuntu-latest'
 
 steps:
+- task: oc-setup@2
+  inputs:
+    openshiftService: 'OpenshiftOnline'
+    version: '3.11'
 - task: NodeTool@0
   inputs:
     versionSpec: '10.x'
