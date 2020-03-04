@@ -13,7 +13,7 @@ steps:
 - task: oc-setup@2
   inputs:
     openshiftService: 'OpenshiftOnline'
-    version: '3.11'
+    version: '4.2'
 - task: NodeTool@0
   inputs:
     versionSpec: '10.x'
@@ -25,5 +25,5 @@ steps:
 - task: oc-cmd@2
   inputs:
     openshiftService: 'OpenshiftOnline'
-    version: '3.11'
-    cmd: 'oc start-build nodejs-ex-1 --follow'
+    version: '4.2'
+    cmd: 'oc start-build nodejs-ex --follow'
